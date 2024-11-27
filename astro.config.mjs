@@ -9,4 +9,7 @@ import lottie from "astro-integration-lottie";
 export default defineConfig({
   site: "https://astroship.web3templates.com",
   integrations: [tailwind(), mdx(), sitemap(), icon(), lottie()],
+  image: {
+    domains: ["linkedin.com"],
+  }
 });
