@@ -1,6 +1,6 @@
-# Astroship - Astro SAAS Starter Website Template
+# Homepage for TONIC project
 
-Astroship is a free starter astro website template for saas, startups, marketing websites, landing pages & blogs. Built with Astro & TailwindCSS.
+This is the homepage for the TONIC project. It is based on the Astroship template by [Web3Templates](https://web3templates.com). Below is the original README for the Astroship template.
 
 This Free Template is sponsored by [Web3Templates](https://web3templates.com)
 
