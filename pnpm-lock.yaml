@@ -10,13 +10,13 @@ importers:
     dependencies:
       '@astrojs/mdx':
         specifier: ^3.0.1
-        version: 3.0.1(astro@4.8.7)
+        version: 3.0.1(astro@4.8.7(@types/node@20.12.12)(typescript@5.4.5))
       '@astrojs/sitemap':
         specifier: ^3.1.5
         version: 3.1.5
       '@astrojs/tailwind':
         specifier: ^5.1.0
-        version: 5.1.0(astro@4.8.7)(tailwindcss@3.4.3)
+        version: 5.1.0(astro@4.8.7(@types/node@20.12.12)(typescript@5.4.5))(tailwindcss@3.4.3)
       '@fontsource-variable/bricolage-grotesque':
         specifier: ^5.0.6
         version: 5.0.6
@@ -37,16 +37,22 @@ importers:
         version: 0.5.13(tailwindcss@3.4.3)
       astro:
         specifier: ^4.8.7
-        version: 4.8.7(typescript@5.4.5)
+        version: 4.8.7(@types/node@20.12.12)(typescript@5.4.5)
       astro-icon:
         specifier: ^1.1.0
         version: 1.1.0
+      astro-integration-lottie:
+        specifier: ^0.3.1
+        version: 0.3.1(lottie-web@5.12.2)
       astro-navbar:
         specifier: ^2.3.2
         version: 2.3.2
       astro-seo:
         specifier: ^0.8.3
         version: 0.8.3(typescript@5.4.5)
+      lottie-web:
+        specifier: ^5.12.2
+        version: 5.12.2
       sharp:
         specifier: ^0.33.4
         version: 0.33.4
@@ -966,6 +972,11 @@ packages:
   astro-icon@1.1.0:
     resolution: {integrity: sha512-Nksc09p7UuHeMcPNS9w1pKqRw3+wEmmh0A3FJW+FNXvqaeWI4RLvD1MCWErpY3Z5Cvad317rvLdik/Hg8GEk8Q==}
 
+  astro-integration-lottie@0.3.1:
+    resolution: {integrity: sha512-zmmVVlsDfvyA/4qAg+l6zrUB/4U99oS4SuVc/zuW1vYZ4pHjjYhW8JYwmCItT+AmE4l6mAkN/TvdXUQ92o4TSQ==}
+    peerDependencies:
+      lottie-web: ^5.10.0
+
   astro-navbar@2.3.2:
     resolution: {integrity: sha512-cb+mYvtlCHMJbJpLsyE6lyNxLWHUqfKaOTBCSHe+xHDYGFquV8cubF/78TzHLlrNJZY3/ofCyPpr8KCLuR7ogg==}
 
@@ -1678,6 +1689,9 @@ packages:
 
   longest-streak@3.1.0:
     resolution: {integrity: sha512-9Ri+o0JYgehTaVBBDoMqIl8GXtbWg711O3srftcHhZ0dqnETqLaoIK0x17fUw9rFSlK/0NlsKe0Ahhyl5pXE2g==}
+
+  lottie-web@5.12.2:
+    resolution: {integrity: sha512-uvhvYPC8kGPjXT3MyKMrL3JitEAmDMp30lVkuq/590Mw9ok6pWcFCwXJveo0t5uqYw1UREQHofD+jVpdjBv8wg==}
 
   lru-cache@10.2.2:
     resolution: {integrity: sha512-9hp3Vp2/hFQUiIwKo8XCeFVnrg8Pk3TYNPIR7tJADKi5YfcF7vEaK7avFHTlSy3kOKYaJQaalfEo6YuXdceBOQ==}
@@ -2800,12 +2814,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@3.0.1(astro@4.8.7)':
+  '@astrojs/mdx@3.0.1(astro@4.8.7(@types/node@20.12.12)(typescript@5.4.5))':
     dependencies:
       '@astrojs/markdown-remark': 5.1.0
       '@mdx-js/mdx': 3.0.1
       acorn: 8.11.3
-      astro: 4.8.7(typescript@5.4.5)
+      astro: 4.8.7(@types/node@20.12.12)(typescript@5.4.5)
       es-module-lexer: 1.5.3
       estree-util-visit: 2.0.0
       github-slugger: 2.0.0
@@ -2831,9 +2845,9 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.23.8
 
-  '@astrojs/tailwind@5.1.0(astro@4.8.7)(tailwindcss@3.4.3)':
+  '@astrojs/tailwind@5.1.0(astro@4.8.7(@types/node@20.12.12)(typescript@5.4.5))(tailwindcss@3.4.3)':
     dependencies:
-      astro: 4.8.7(typescript@5.4.5)
+      astro: 4.8.7(@types/node@20.12.12)(typescript@5.4.5)
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
       postcss-load-config: 4.0.2(postcss@8.4.38)
@@ -3623,6 +3637,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  astro-integration-lottie@0.3.1(lottie-web@5.12.2):
+    dependencies:
+      lottie-web: 5.12.2
+
   astro-navbar@2.3.2: {}
 
   astro-seo@0.8.3(typescript@5.4.5):
@@ -3633,7 +3651,7 @@ snapshots:
       - prettier-plugin-astro
       - typescript
 
-  astro@4.8.7(typescript@5.4.5):
+  astro@4.8.7(@types/node@20.12.12)(typescript@5.4.5):
     dependencies:
       '@astrojs/compiler': 2.8.0
       '@astrojs/internal-helpers': 0.4.0
@@ -3692,8 +3710,8 @@ snapshots:
       tsconfck: 3.0.3(typescript@5.4.5)
       unist-util-visit: 5.0.0
       vfile: 6.0.1
-      vite: 5.2.11
-      vitefu: 0.2.5(vite@5.2.11)
+      vite: 5.2.11(@types/node@20.12.12)
+      vitefu: 0.2.5(vite@5.2.11(@types/node@20.12.12))
       which-pm: 2.2.0
       yargs-parser: 21.1.1
       zod: 3.23.8
@@ -4500,6 +4518,8 @@ snapshots:
 
   longest-streak@3.1.0: {}
 
+  lottie-web@5.12.2: {}
+
   lru-cache@10.2.2: {}
 
   lru-cache@5.1.1:
@@ -5186,8 +5206,9 @@ snapshots:
   postcss-load-config@4.0.2(postcss@8.4.38):
     dependencies:
       lilconfig: 3.1.1
-      postcss: 8.4.38
       yaml: 2.4.2
+    optionalDependencies:
+      postcss: 8.4.38
 
   postcss-nested@6.0.1(postcss@8.4.38):
     dependencies:
@@ -5622,7 +5643,7 @@ snapshots:
   ts-interface-checker@0.1.13: {}
 
   tsconfck@3.0.3(typescript@5.4.5):
-    dependencies:
+    optionalDependencies:
       typescript: 5.4.5
 
   tslib@2.6.2:
@@ -5774,56 +5795,62 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite@5.2.11:
+  vite@5.2.11(@types/node@20.12.12):
     dependencies:
       esbuild: 0.20.2
       postcss: 8.4.38
       rollup: 4.18.0
     optionalDependencies:
+      '@types/node': 20.12.12
       fsevents: 2.3.3
 
-  vitefu@0.2.5(vite@5.2.11):
-    dependencies:
-      vite: 5.2.11
+  vitefu@0.2.5(vite@5.2.11(@types/node@20.12.12)):
+    optionalDependencies:
+      vite: 5.2.11(@types/node@20.12.12)
 
   volar-service-css@0.0.45(@volar/language-service@2.2.4):
     dependencies:
-      '@volar/language-service': 2.2.4
       vscode-css-languageservice: 6.2.14
       vscode-languageserver-textdocument: 1.0.11
       vscode-uri: 3.0.8
+    optionalDependencies:
+      '@volar/language-service': 2.2.4
 
   volar-service-emmet@0.0.45(@volar/language-service@2.2.4):
     dependencies:
       '@emmetio/css-parser': 0.4.0
       '@emmetio/html-matcher': 1.3.0
-      '@volar/language-service': 2.2.4
       '@vscode/emmet-helper': 2.9.3
+    optionalDependencies:
+      '@volar/language-service': 2.2.4
 
   volar-service-html@0.0.45(@volar/language-service@2.2.4):
     dependencies:
-      '@volar/language-service': 2.2.4
       vscode-html-languageservice: '@johnsoncodehk/vscode-html-languageservice@5.2.0-34a5462'
       vscode-languageserver-textdocument: 1.0.11
       vscode-uri: 3.0.8
+    optionalDependencies:
+      '@volar/language-service': 2.2.4
 
   volar-service-prettier@0.0.45(@volar/language-service@2.2.4):
     dependencies:
-      '@volar/language-service': 2.2.4
       vscode-uri: 3.0.8
+    optionalDependencies:
+      '@volar/language-service': 2.2.4
 
   volar-service-typescript-twoslash-queries@0.0.45(@volar/language-service@2.2.4):
-    dependencies:
+    optionalDependencies:
       '@volar/language-service': 2.2.4
 
   volar-service-typescript@0.0.45(@volar/language-service@2.2.4):
     dependencies:
-      '@volar/language-service': 2.2.4
       path-browserify: 1.0.1
       semver: 7.6.2
       typescript-auto-import-cache: 0.3.2
       vscode-languageserver-textdocument: 1.0.11
       vscode-nls: 5.2.0
+    optionalDependencies:
+      '@volar/language-service': 2.2.4
 
   vscode-css-languageservice@6.2.14:
     dependencies:
