@@ -1,0 +1,69 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon/components";
+
+const features = [
+  {
+    title: "Scaffold your project, instantly",
+    description:
+      "No idea how to start? We got you. TONIC comes with templates to help kick start your smart contract development journey.",
+    icon: "bx:bxs-briefcase",
+  },
+  {
+    title: "No terminal required",
+    description:
+      "TONIC is compatible with vscode.dev, a web IDE that runs in your browser. No need to install anything.",
+    icon: "bx:bxs-window-alt",
+  },
+  {
+    title: "TON network ready",
+    description:
+      "Built-in support for deployment to the TON network. No need to worry about setting up your own infrastructure.",
+    icon: "bx:bxs-data",
+  },
+  {
+    title: "Test your contracts",
+    description:
+      "TONIC comes with a built-in testing framework to help you test your smart contracts.",
+    icon: "bx:bxs-bot",
+  },
+  {
+    title: "Intuitive API",
+    description:
+      "TONIC provides an easy-to-use API to interact with your smart contracts.",
+    icon: "bx:bxs-file-find",
+  },
+  {
+    title: "Community",
+    description:
+      "TONIC is an open source project powered by contributors making plenty of individual contributions.",
+    icon: "bx:bxs-user",
+  },
+];
+---
+
+<div class="mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    Everything you need to deploy on the TON blockchain.
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    TONIC comes batteries included. It takes the best parts of state-of-the-art
+    tools and adds its own innovations.
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
