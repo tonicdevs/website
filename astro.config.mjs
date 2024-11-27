@@ -10,6 +10,6 @@ export default defineConfig({
   site: "https://astroship.web3templates.com",
   integrations: [tailwind(), mdx(), sitemap(), icon(), lottie()],
   image: {
-    domains: ["media.licdn.com"],
+    domains: ["media.licdn.com", "images.unsplash.com"],
   }
 });
