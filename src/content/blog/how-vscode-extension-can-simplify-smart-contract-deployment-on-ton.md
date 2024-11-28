@@ -62,4 +62,6 @@ Deploying smart contracts on the TON network can be accomplished through various
 
 ## Conclusion
 
-Both methods for deploying smart contracts on the TON network have their own advantages and trade-offs. The traditional method offers flexibility and deep control at the cost of complexity and time investment. In contrast, using a VSCode extension streamlines the process through integration and enhanced usability but may limit customization for specialized use cases. Ultimately, the choice depends on the developer's preferences, experience level, and project requirements. For those looking to improve efficiency and reduce setup time, a VSCode extension tailored for the TON network is an attractive option, especially for iterative development and quick deployments.
+Both methods for deploying smart contracts on the TON network have their own advantages and trade-offs. The traditional method offers flexibility and deep control at the cost of complexity and time investment. In contrast, using a VSCode extension streamlines the process through integration and enhanced usability but may limit customization for specialized use cases. 
+
+Ultimately, the choice depends on the developer's preferences, experience level, and project requirements. For those looking to improve efficiency and reduce setup time, a VSCode extension tailored for the TON network is an attractive option, especially for iterative development and quick deployments.
